@@ -3,4 +3,26 @@
 @{
 }
 
-  <a class="nav-link text-dark" asp-area="" asp-page="/Checkout/Checkout">Checkout</a>
+<div class="container">
+    <div class="col-6 offset-3">
+
+        <h1>Create Your Own Pizza!</h1>
+        <form method="post" class="">
+            <div class="my-2">
+                <input asp-for="Pizza.Name" placeholder="give your pizza a name" />
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Saouce" /> Sauce
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Cheese" /> Cheese
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Peperoni" /> Peperoni
+            </div>
+            <div class="my-2">
+                <button class="btn btn-primary mt-2" type="submit">Order My Pizza</button>
+            </div>
+        </form>
+    </div>
+</div>
