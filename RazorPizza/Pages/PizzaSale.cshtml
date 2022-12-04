@@ -24,6 +24,21 @@
                     </div>
                 </div>
             </div>
+
+            @foreach (var pizza in Model.FakePizzaDB)
+            {
+                var imgPath = "~/images/Pizzas/" + (pizza.ImageTitle + ".png");
+
+                <div class="col-4 mb-5">
+                    <img src="@imgPath" alt="" class="w-100" asp-append-version="true" />
+                    <a class="btn btn-primary mt-4" 
+                    asp-area="" 
+                    asp-page="Checkout/Checkout"
+                    asp-route-Name="@pizza.Name"
+                    asp-route-ImageTitle="@pizza.ImageTitle"
+                    asp-route-PizzaPrice="@pizza.FinalPrice">Get this Pizza!</a>
+                </div>
+            }
         </div>
     </div>
 </div>
