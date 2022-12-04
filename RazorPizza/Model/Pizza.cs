@@ -4,9 +4,10 @@
     {
         public string ImageTitle { get; set; }
         public string Name { get; set; }
-        public float BasePrice { get; set; }
-        public bool Saouce { get; set; }
+        public float BasePrice { get; set; } = 2;
+        public bool Sauce { get; set; }
         public bool Cheese { get; set; }
         public bool Peperoni { get; set; }
+        public float FinalPrice { get; set; }
     }
 }

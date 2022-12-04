@@ -18,7 +18,7 @@ namespace RazorPizza.Pages.Forms
         public IActionResult  OnPost()
         {
             PizzaPrice = Pizza.BasePrice;
-            PizzaPrice += Pizza.Saouce ? 1 : 0;
+            PizzaPrice += Pizza.Sauce ? 1 : 0;
             PizzaPrice += Pizza.Cheese ? 1 : 0;
             PizzaPrice += Pizza.Peperoni ? 1 : 0;
 
