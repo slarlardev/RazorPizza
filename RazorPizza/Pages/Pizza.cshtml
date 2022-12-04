@@ -3,5 +3,27 @@
 @{
 }
 
-<a class="nav-link text-dark" asp-area="" asp-page="/Forms/CustomPizza">Custom Pizza</a>
-<a class="nav-link text-dark" asp-area="" asp-page="/Checkout/Checkout">Checkout</a>
+<div class="text-center">
+    <div class="container">
+        <h1 class="display-5 text-capitalize text-black">
+            Our great selection of pizzas!
+        </h1>
+        <p class="smallText"><i>Only one pizza per order</i></p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 my-5 bg-danger bg-opacity-75 p-4">
+                <div class="row w-100">
+                    <div class="col-4">
+                        <img src="~/images/Pizzas/Create.png" class="w-100" />
+                    </div>
+                    <div class="col-8 align-items-center">
+                        <h3 clas="text-left">Create your own Pizza</h3>
+                        <p class="text-left">Maker your own Pizza with our PizzaMaker!</p>
+                        <a class="btn btn-primary" asp-area="" asp-page="/Forms/CustomPizza">Try Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
